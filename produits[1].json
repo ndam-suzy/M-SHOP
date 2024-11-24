@@ -1,0 +1,1005 @@
+[
+    {
+      "id": 1,
+      "nom": "Sac à main en cuir",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Sac à mains",
+      "prix": 15000,
+      "description": "Sac à main élégant en cuir de haute qualité.",
+      "images": "images/sac-main1.jpg"
+    },
+    {
+      "id": 2,
+      "nom": "Sac à dos en toile",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Sacs à dos",
+      "prix": 8000,
+      "description": "Sac à dos pratique et spacieux, idéal pour les déplacements quotidiens.",
+      "images": "images/sac-dos1.jpg"
+    },
+    {
+      "id": 3,
+      "nom": "Sac bandoulière en cuir",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Bandoulières",
+      "prix": 12000,
+      "description": "Sac bandoulière chic en cuir avec fermeture à rabat.",
+      "images": "images/sac-bandouliere1.jpg"
+    },
+    {
+      "id": 4,
+      "nom": "Béret en laine",
+      "menu": "Accessoires",
+      "categorie": "Chapeau",
+      "sous-categorie": "Béret",
+      "prix": 3000,
+      "description": "Béret en laine confortable et chaud, parfait pour l'hiver.",
+      "images": "images/beret1.jpg"
+    },
+    {
+      "id": 5,
+      "nom": "Casquette en coton",
+      "menu": "Accessoires",
+      "categorie": "Chapeau",
+      "sous-categorie": "Casquettes",
+      "prix": 2500,
+      "description": "Casquette moderne en coton, idéale pour l'été.",
+      "images": "images/casquette1.jpg"
+    },
+    {
+      "id": 6,
+      "nom": "Bonnet en laine",
+      "menu": "Accessoires",
+      "categorie": "Chapeau",
+      "sous-categorie": "Bonnets",
+      "prix": 3500,
+      "description": "Bonnet chaud en laine pour les journées froides.",
+      "images": "images/bonnet1.jpg"
+    },
+    {
+      "id": 7,
+      "nom": "Lunettes de soleil aviateur",
+      "menu": "Accessoires",
+      "categorie": "Lunettes",
+      "sous-categorie": "Aviateur",
+      "prix": 6000,
+      "description": "Lunettes de soleil aviateur au design intemporel.",
+      "images": "images/lunettes-aviateur1.jpg"
+    },
+    {
+      "id": 8,
+      "nom": "Lunettes de soleil wayfarer",
+      "menu": "Accessoires",
+      "categorie": "Lunettes",
+      "sous-categorie": "Wayfarer",
+      "prix": 5000,
+      "description": "Lunettes de soleil au style classique, parfaites pour l'été.",
+      "images": "images/lunettes-wayfarer1.jpg"
+    },
+    {
+      "id": 9,
+      "nom": "Lunettes de soleil cat-eye",
+      "menu": "Accessoires",
+      "categorie": "Lunettes",
+      "sous-categorie": "Cat-eye",
+      "prix": 7000,
+      "description": "Lunettes de soleil au design élégant et féminin.",
+      "images": "images/lunettes-cateye1.jpg"
+    },
+    {
+      "id": 10,
+      "nom": "Sac à main en toile",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Sac à mains",
+      "prix": 5000,
+      "description": "Sac à main léger en toile, idéal pour le quotidien.",
+      "images": "images/sac-main2.jpg"
+    },
+    {
+      "id": 11,
+      "nom": "Sac à dos en cuir",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Sacs à dos",
+      "prix": 14000,
+      "description": "Sac à dos en cuir de haute qualité, à la fois chic et pratique.",
+      "images": "images/sac-dos2.jpg"
+    },
+    {
+      "id": 12,
+      "nom": "Sac bandoulière en toile",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Bandoulières",
+      "prix": 8500,
+      "description": "Sac bandoulière moderne en toile, facile à porter.",
+      "images": "images/sac-bandouliere2.jpg"
+    },
+    {
+      "id": 13,
+      "nom": "Béret en velours",
+      "menu": "Accessoires",
+      "categorie": "Chapeau",
+      "sous-categorie": "Béret",
+      "prix": 4000,
+      "description": "Béret en velours doux et confortable.",
+      "images": "images/beret2.jpg"
+    },
+    {
+      "id": 14,
+      "nom": "Casquette de sport",
+      "menu": "Accessoires",
+      "categorie": "Chapeau",
+      "sous-categorie": "Casquettes",
+      "prix": 2000,
+      "description": "Casquette de sport légère, idéale pour les activités extérieures.",
+      "images": "images/casquette2.jpg"
+    },
+    {
+      "id": 15,
+      "nom": "Bonnet à pompon",
+      "menu": "Accessoires",
+      "categorie": "Chapeau",
+      "sous-categorie": "Bonnets",
+      "prix": 4500,
+      "description": "Bonnet en laine avec pompon, parfait pour l'hiver.",
+      "images": "images/bonnet2.jpg"
+    },
+    {
+      "id": 16,
+      "nom": "Lunettes de soleil aviateur dorées",
+      "menu": "Accessoires",
+      "categorie": "Lunettes",
+      "sous-categorie": "Aviateur",
+      "prix": 8000,
+      "description": "Lunettes aviateur au cadre doré élégant.",
+      "images": "images/lunettes-aviateur2.jpg"
+    },
+    {
+      "id": 17,
+      "nom": "Lunettes de soleil wayfarer noires",
+      "menu": "Accessoires",
+      "categorie": "Lunettes",
+      "sous-categorie": "Wayfarer",
+      "prix": 5500,
+      "description": "Lunettes de soleil au style classique avec monture noire.",
+      "images": "images/lunettes-wayfarer2.jpg"
+    },
+    {
+      "id": 18,
+      "nom": "Lunettes de soleil cat-eye colorées",
+      "menu": "Accessoires",
+      "categorie": "Lunettes",
+      "sous-categorie": "Cat-eye",
+      "prix": 7500,
+      "description": "Lunettes de soleil cat-eye avec une touche de couleur.",
+      "images": "images/lunettes-cateye2.jpg"
+    },
+    {
+      "id": 19,
+      "nom": "Sac à main en cuir verni",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Sac à mains",
+      "prix": 18000,
+      "description": "Sac à main en cuir verni, élégant et raffiné.",
+      "images": "images/sac-main3.jpg"
+    },
+    {
+      "id": 20,
+      "nom": "Sac à dos minimaliste",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Sacs à dos",
+      "prix": 9500,
+      "description": "Sac à dos minimaliste en cuir, design moderne.",
+      "images": "images/sac-dos3.jpg"
+    },
+    {
+      "id": 21,
+      "nom": "Sac bandoulière en denim",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Bandoulières",
+      "prix": 6500,
+      "description": "Sac bandoulière en denim avec des touches de cuir.",
+      "images": "images/sac-bandouliere3.jpg"
+    },
+    {
+      "id": 22,
+      "nom": "Béret en laine mérinos",
+      "menu": "Accessoires",
+      "categorie": "Chapeau",
+      "sous-categorie": "Béret",
+      "prix": 5000,
+      "description": "Béret en laine mérinos, doux et chaud.",
+      "images": "images/beret3.jpg"
+    },
+    {
+      "id": 23,
+      "nom": "Casquette à carreaux",
+      "menu": "Accessoires",
+      "categorie": "Chapeau",
+      "sous-categorie": "Casquettes",
+      "prix": 4000,
+      "description": "Casquette à motif carreaux, parfaite pour l'automne.",
+      "images": "images/casquette3.jpg"
+    },
+    {
+      "id": 24,
+      "nom": "Bonnet en cachemire",
+      "menu": "Accessoires",
+      "categorie": "Chapeau",
+      "sous-categorie": "Bonnets",
+      "prix": 8000,
+      "description": "Bonnet en cachemire doux et chaud, idéal pour l'hiver.",
+      "images": "images/bonnet3.jpg"
+    },
+    {
+      "id": 25,
+      "nom": "Lunettes de soleil aviateur argentées",
+      "menu": "Accessoires",
+      "categorie": "Lunettes",
+      "sous-categorie": "Aviateur",
+      "prix": 8500,
+      "description": "Lunettes aviateur avec cadre argenté, élégantes et modernes.",
+      "images": "images/lunettes-aviateur3.jpg"
+    },
+    {
+      "id": 26,
+      "nom": "Lunettes de soleil wayfarer transparentes",
+      "menu": "Accessoires",
+      "categorie": "Lunettes",
+      "sous-categorie": "Wayfarer",
+      "prix": 4500,
+      "description": "Lunettes de soleil avec monture transparente et design classique.",
+      "images": "images/lunettes-wayfarer4.jpg"
+    },
+    {
+      "id": 27,
+      "nom": "Lunettes de soleil cat-eye en écaille",
+      "menu": "Accessoires",
+      "categorie": "Lunettes",
+      "sous-categorie": "Cat-eye",
+      "prix": 7000,
+      "description": "Lunettes cat-eye avec motif écaille chic et intemporel.",
+      "images": "images/lunettes-cateye4.jpg"
+    },
+    {
+      "id": 28,
+      "nom": "Sac à main en cuir souple",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Sac à mains",
+      "prix": 17000,
+      "description": "Sac à main en cuir souple avec un design moderne.",
+      "images": "images/sac-main4.jpg"
+    },
+    {
+      "id": 29,
+      "nom": "Sac à dos en cuir et toile",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Sacs à dos",
+      "prix": 12000,
+      "description": "Sac à dos pratique en cuir et toile, parfait pour l'école ou le travail.",
+      "images": "images/sac-dos4.jpg"
+    },
+    {
+      "id": 30,
+      "nom": "Sac bandoulière en cuir lisse",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Bandoulières",
+      "prix": 13000,
+      "description": "Sac bandoulière élégant en cuir lisse.",
+      "images": "images/sac-bandouliere5.jpg"
+    },
+    {
+      "id": 31,
+      "nom": "Béret en tweed",
+      "menu": "Accessoires",
+      "categorie": "Chapeau",
+      "sous-categorie": "Béret",
+      "prix": 3500,
+      "description": "Béret en tweed au style rétro.",
+      "images": "images/beret4.jpg"
+    },
+    {
+      "id": 32,
+      "nom": "Casquette en laine",
+      "menu": "Accessoires",
+      "categorie": "Chapeau",
+      "sous-categorie": "Casquettes",
+      "prix": 3000,
+      "description": "Casquette en laine pour une chaleur optimale.",
+      "images": "images/casquette4.jpg"
+    },
+    {
+      "id": 33,
+      "nom": "Bonnet à revers",
+      "menu": "Accessoires",
+      "categorie": "Chapeau",
+      "sous-categorie": "Bonnets",
+      "prix": 2500,
+      "description": "Bonnet à revers, simple et confortable.",
+      "images": "images/bonnet4.jpg"
+    },
+    {
+      "id": 34,
+      "nom": "Lunettes de soleil aviateur en cuivre",
+      "menu": "Accessoires",
+      "categorie": "Lunettes",
+      "sous-categorie": "Aviateur",
+      "prix": 9000,
+      "description": "Lunettes de soleil aviateur au cadre en cuivre.",
+      "images": "images/lunettes-aviateur4.jpg"
+    },
+    {
+      "id": 35,
+      "nom": "Lunettes de soleil wayfarer en bois",
+      "menu": "Accessoires",
+      "categorie": "Lunettes",
+      "sous-categorie": "Wayfarer",
+      "prix": 10000,
+      "description": "Lunettes de soleil avec monture en bois durable.",
+      "images": "images/lunettes-wayfarer5.jpg"
+    },
+    {
+      "id": 36,
+      "nom": "Lunettes de soleil cat-eye en métal",
+      "menu": "Accessoires",
+      "categorie": "Lunettes",
+      "sous-categorie": "Cat-eye",
+      "prix": 9500,
+      "description": "Lunettes de soleil cat-eye avec cadre en métal.",
+      "images": "images/lunettes-cateye5.jpg"
+    },
+    {
+      "id": 37,
+      "nom": "Sac à main en cuir grainé",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Sac à mains",
+      "prix": 2000,
+      "description": "Sac à main en cuir grainé avec une finition de haute qualité.",
+      "images": "images/sac-main5.jpg"
+    },
+    {
+      "id": 38,
+      "nom": "Sac à dos vintage",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Sacs à dos",
+      "prix": 11000,
+      "description": "Sac à dos vintage, avec des détails en cuir.",
+      "images": "images/sac-dos5.jpg"
+    },
+    {
+      "id": 39,
+      "nom": "Sac bandoulière en cuir vintage",
+      "menu": "Accessoires",
+      "categorie": "Sac",
+      "sous-categorie": "Bandoulières",
+      "prix": 16000,
+      "description": "Sac bandoulière en cuir vintage, parfait pour les amateurs de style rétro.",
+      "images": "images/sac-bandouliere6.jpg"
+    },
+    {
+      "id": 40,
+      "nom": "Béret en laine mérinos",
+      "menu": "Accessoires",
+      "categorie": "Chapeau",
+      "sous-categorie": "Béret",
+      "prix": 5500,
+      "description": "Béret en laine mérinos doux et élégant.",
+      "images": "images/beret5.jpg"
+    },
+    
+        {
+          "id": 41,
+          "nom": "Top en soie",
+          "menu": "Vêtements",
+          "categorie": "Femmes",
+          "sous-categorie": "Hauts",
+          "prix": 9000,
+          "description": "Top en soie léger et élégant, idéal pour les journées chaudes.",
+          "images": "images/femmes-hauts1.jpg"
+        },
+        {
+          "id": 42,
+          "nom": "Pantalon en lin",
+          "menu": "Vêtements",
+          "categorie": "Femmes",
+          "sous-categorie": "Bas",
+          "prix": 11000,
+          "description": "Pantalon en lin, frais et confortable pour l'été.",
+          "images": "images/femmes-bas1.jpg"
+        },
+        {
+          "id": 43,
+          "nom": "Robe d'été en coton",
+          "menu": "Vêtements",
+          "categorie": "Femmes",
+          "sous-categorie": "Robes",
+          "prix": 13000,
+          "description": "Robe d'été légère et confortable, parfaite pour les journées ensoleillées.",
+          "images": "images/femmes-robes1.jpg"
+        },
+        {
+          "id": 44,
+          "nom": "Chemise en coton",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Hauts",
+          "prix": 7500,
+          "description": "Chemise en coton classique, idéale pour un look décontracté.",
+          "images": "images/hommes-hauts1.jpg"
+        },
+        {
+          "id": 45,
+          "nom": "Jean slim",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Bas",
+          "prix": 9500,
+          "description": "Jean slim en denim, coupe ajustée et confortable.",
+          "images": "images/hommes-bas1.jpg"
+        },
+        {
+          "id": 46,
+          "nom": "Veste en cuir",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Vestes",
+          "prix": 25000,
+          "description": "Veste en cuir de haute qualité, parfait pour l'automne.",
+          "images": "images/hommes-vestes1.jpg"
+        },
+        {
+          "id": 47,
+          "nom": "T-shirt imprimé",
+          "menu": "Vêtements",
+          "categorie": "Enfants",
+          "sous-categorie": "Hauts",
+          "prix": 3000,
+          "description": "T-shirt avec imprimé coloré, parfait pour les enfants actifs.",
+          "images": "images/enfants-hauts1.jpg"
+        },
+        {
+          "id": 48,
+          "nom": "Pantalon de survêtement",
+          "menu": "Vêtements",
+          "categorie": "Enfants",
+          "sous-categorie": "Bas",
+          "prix": 4000,
+          "description": "Pantalon de survêtement confortable pour les jeux et les activités sportives.",
+          "images": "images/enfants-bas1.jpg"
+        },
+        {
+          "id": 49,
+          "nom": "Ensemble en coton",
+          "menu": "Vêtements",
+          "categorie": "Enfants",
+          "sous-categorie": "Ensembles",
+          "prix": 5000,
+          "description": "Ensemble en coton doux, pratique et confortable pour les enfants.",
+          "images": "images/enfants-ensembles1.jpg"
+        },
+        {
+          "id": 50,
+          "nom": "Blouse en soie",
+          "menu": "Vêtements",
+          "categorie": "Femmes",
+          "sous-categorie": "Hauts",
+          "prix": 12000,
+          "description": "Blouse élégante en soie, idéale pour les occasions spéciales.",
+          "images": "images/femmes-hauts2.jpg"
+        },
+        {
+          "id": 51,
+          "nom": "Jupe en jean",
+          "menu": "Vêtements",
+          "categorie": "Femmes",
+          "sous-categorie": "Bas",
+          "prix": 7500,
+          "description": "Jupe en jean classique, facile à porter en toute saison.",
+          "images": "images/femmes-bas2.jpg"
+        },
+        {
+          "id": 52,
+          "nom": "Robe longue fleurie",
+          "menu": "Vêtements",
+          "categorie": "Femmes",
+          "sous-categorie": "Robes",
+          "prix": 1600,
+          "description": "Robe longue à imprimé fleuri, parfaite pour l'été.",
+          "images": "images/femmes-robes2.jpg"
+        },
+        {
+          "id": 53,
+          "nom": "Polo en coton",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Hauts",
+          "prix": 6500,
+          "description": "Polo en coton confortable, idéal pour un look casual.",
+          "images": "images/hommes-hauts2.jpg"
+        },
+        {
+          "id": 54,
+          "nom": "Chino beige",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Bas",
+          "prix": 1000,
+          "description": "Chino beige, un classique du vestiaire masculin.",
+          "images": "images/hommes-bas2.jpg"
+        },
+        {
+          "id": 55,
+          "nom": "Blouson en cuir",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Vestes",
+          "prix": 22000,
+          "description": "Blouson en cuir intemporel, parfait pour l'hiver.",
+          "images": "images/hommes-vestes2.jpg"
+        },
+        {
+          "id": 56,
+          "nom": "T-shirt à rayures",
+          "menu": "Vêtements",
+          "categorie": "Enfants",
+          "sous-categorie": "Hauts",
+          "prix": 2500,
+          "description": "T-shirt à rayures colorées pour un look dynamique et fun.",
+          "images": "images/enfants-hauts2.jpg"
+        },
+        {
+          "id": 57,
+          "nom": "Pantalon de jogging",
+          "menu": "Vêtements",
+          "categorie": "Enfants",
+          "sous-categorie": "Bas",
+          "prix": 3500,
+          "description": "Pantalon de jogging confortable pour un look décontracté.",
+          "images": "images/enfants-bas2.jpg"
+        },
+        {
+          "id": 58,
+          "nom": "Ensemble sportif",
+          "menu": "Vêtements",
+          "categorie": "Enfants",
+          "sous-categorie": "Ensembles",
+          "prix": 5500,
+          "description": "Ensemble sportif en coton, idéal pour les activités physiques.",
+          "images": "images/enfants-ensembles2.jpg"
+        },
+        {
+          "id": 59,
+          "nom": "Top à manches longues",
+          "menu": "Vêtements",
+          "categorie": "Femmes",
+          "sous-categorie": "Hauts",
+          "prix": 8500,
+          "description": "Top à manches longues, confortable pour les journées plus fraîches.",
+          "images": "images/femmes-hauts3.jpg"
+        },
+        {
+          "id": 60,
+          "nom": "Short en jean",
+          "menu": "Vêtements",
+          "categorie": "Femmes",
+          "sous-categorie": "Bas",
+          "prix": 6500,
+          "description": "Short en jean, parfait pour l'été et les journées ensoleillées.",
+          "images": "images/femmes-bas3.jpg"
+        },
+        {
+          "id": 61,
+          "nom": "Robe de soirée en velours",
+          "menu": "Vêtements",
+          "categorie": "Femmes",
+          "sous-categorie": "Robes",
+          "prix": 25000,
+          "description": "Robe de soirée en velours, pour un look chic et raffiné.",
+          "images": "images/femmes-robes3.jpg"
+        },
+        {
+          "id": 62,
+          "nom": "Sweat-shirt à capuche",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Hauts",
+          "prix": 6000,
+          "description": "Sweat-shirt à capuche, confortable pour les journées fraîches.",
+          "images": "images/hommes-hauts3.jpg"
+        },
+        {
+          "id": 63,
+          "nom": "Jean droit",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Bas",
+          "prix": 11000,
+          "description": "Jean droit, classique et polyvalent pour toute occasion.",
+          "images": "images/hommes-bas3.jpg"
+        },
+        {
+          "id": 64,
+          "nom": "Parka d'hiver",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Vestes",
+          "prix": 3000,
+          "description": "Parka d'hiver chaude et résistante, idéale pour les températures basses.",
+          "images": "images/hommes-vestes3.jpg"
+        },
+        {
+          "id": 65,
+          "nom": "Haut à volants",
+          "menu": "Vêtements",
+          "categorie": "Enfants",
+          "sous-categorie": "Hauts",
+          "prix": 2800,
+          "description": "Haut à volants, idéal pour les occasions festives.",
+          "images": "images/enfants-hauts3.jpg"
+        },
+        {
+          "id": 66,
+          "nom": "Short en coton",
+          "menu": "Vêtements",
+          "categorie": "Enfants",
+          "sous-categorie": "Bas",
+          "prix": 3000,
+          "description": "Short en coton, léger et confortable pour les journées d'été.",
+          "images": "images/enfants-bas3.jpg"
+        },
+        {
+          "id": 67,
+          "nom": "Ensemble pyjama",
+          "menu": "Vêtements",
+          "categorie": "Enfants",
+          "sous-categorie": "Ensembles",
+          "prix": 4000,
+          "description": "Ensemble pyjama en coton doux, pour des nuits paisibles.",
+          "images": "images/enfants-ensembles3.jpg"
+        },
+        {
+          "id": 68,
+          "nom": "T-shirt à imprimé licorne",
+          "menu": "Vêtements",
+          "categorie": "Femmes",
+          "sous-categorie": "Hauts",
+          "prix": 5000,
+          "description": "T-shirt à imprimé licorne, parfait pour un look fun et décontracté.",
+          "images": "images/femmes-hauts4.jpg"
+        },
+        {
+          "id": 69,
+          "nom": "Pantalon palazzo",
+          "menu": "Vêtements",
+          "categorie": "Femmes",
+          "sous-categorie": "Bas",
+          "prix": 8500,
+          "description": "Pantalon palazzo fluide, idéal pour un look chic et confortable.",
+          "images": "images/femmes-bas4.jpg"
+        },
+        {
+          "id": 70,
+          "nom": "Robe maxi à pois",
+          "menu": "Vêtements",
+          "categorie": "Femmes",
+          "sous-categorie": "Robes",
+          "prix": 15000,
+          "description": "Robe maxi à pois, parfaite pour un look estival et élégant.",
+          "images": "images/femmes-robes4.jpg"
+        },
+        {
+          "id": 71,
+          "nom": "Veste en jean",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Vestes",
+          "prix": 12000,
+          "description": "Veste en jean, un classique intemporel du vestiaire masculin.",
+          "images": "images/hommes-vestes4.jpg"
+        },
+        {
+          "id": 72,
+          "nom": "Chemise à carreaux",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Hauts",
+          "prix": 7200,
+          "description": "Chemise à carreaux, idéale pour un look casual et stylé.",
+          "images": "images/hommes-hauts4.jpg"
+        },
+        {
+          "id": 73,
+          "nom": "Bermuda en coton",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Bas",
+          "prix": 4800,
+          "description": "Bermuda en coton léger, parfait pour les journées chaudes.",
+          "images": "images/hommes-bas4.jpg"
+        },
+        {
+          "id": 74,
+          "nom": "Pantalon cargo",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Bas",
+          "prix": 10500,
+          "description": "Pantalon cargo pratique avec plusieurs poches, idéal pour un look décontracté.",
+          "images": "images/hommes-bas5.jpg"
+        },
+        {
+          "id": 75,
+          "nom": "Polo rayé",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Hauts",
+          "prix": 6500,
+          "description": "Polo rayé pour un look élégant et décontracté.",
+          "images": "images/hommes-hauts5.jpg"
+        },
+        {
+          "id": 76,
+          "nom": "T-shirt avec illustration",
+          "menu": "Vêtements",
+          "categorie": "Enfants",
+          "sous-categorie": "Hauts",
+          "prix": 3500,
+          "description": "T-shirt avec illustration amusante, parfait pour les enfants créatifs.",
+          "images": "images/enfants-hauts4.jpg"
+        },
+        {
+          "id": 77,
+          "nom": "Pantalon en velours côtelé",
+          "menu": "Vêtements",
+          "categorie": "Enfants",
+          "sous-categorie": "Bas",
+          "prix": 4000,
+          "description": "Pantalon en velours côtelé, idéal pour les journées fraîches.",
+          "images": "images/enfants-bas4.jpg"
+        },
+        {
+          "id": 78,
+          "nom": "Robe à smocks",
+          "menu": "Vêtements",
+          "categorie": "Enfants",
+          "sous-categorie": "Robes",
+          "prix": 5000,
+          "description": "Robe à smocks, légère et parfaite pour les journées ensoleillées.",
+          "images": "images/enfants-robes1.jpg"
+        },
+        {
+          "id": 79,
+          "nom": "Ensemble de bain",
+          "menu": "Vêtements",
+          "categorie": "Enfants",
+          "sous-categorie": "Ensembles",
+          "prix": 6000,
+          "description": "Ensemble de bain avec motif marin, parfait pour la plage.",
+          "images": "images/enfants-ensembles4.jpg"
+        },
+        {
+          "id": 80,
+          "nom": "Pantalon de ski",
+          "menu": "Vêtements",
+          "categorie": "Hommes",
+          "sous-categorie": "Bas",
+          "prix": 18000,
+          "description": "Pantalon de ski, résistant et chaud pour vos aventures hivernales.",
+          "images": "images/hommes-bas6.jpg"
+        },
+            {
+              "id": 81,
+              "nom": "Ras de cou en argent",
+              "menu": "Bijoux",
+              "categorie": "Colliers",
+              "sous-categorie": "Ras de cou",
+              "prix": 1200,
+              "description": "Ras de cou délicat en argent, parfait pour un look élégant.",
+              "images": "images/colliers-rasdecou1.jpg"
+            },
+            {
+              "id": 82,
+              "nom": "Sautoir en perles",
+              "menu": "Bijoux",
+              "categorie": "Colliers",
+              "sous-categorie": "Sautoirs",
+              "prix": 1500,
+              "description": "Sautoir en perles blanches, ajoute une touche de sophistication à votre tenue.",
+              "images": "images/colliers-sautoir1.jpg"
+            },
+            {
+              "id": 83,
+              "nom": "Pendentif en or",
+              "menu": "Bijoux",
+              "categorie": "Colliers",
+              "sous-categorie": "Pendentifs",
+              "prix": 2000,
+              "description": "Pendentif en or jaune, simple et élégant, pour une allure chic.",
+              "images": "images/colliers-pendentif1.jpg"
+            },
+            {
+              "id": 84,
+              "nom": "Jonc en métal doré",
+              "menu": "Bijoux",
+              "categorie": "Bracelets",
+              "sous-categorie": "Joncs",
+              "prix": 1100,
+              "description": "Jonc en métal doré, sobre et raffiné, pour un style minimaliste.",
+              "images": "images/bracelets-jonc1.jpg"
+            },
+            {
+              "id": 85,
+              "nom": "Bracelet chaîne en argent",
+              "menu": "Bijoux",
+              "categorie": "Bracelets",
+              "sous-categorie": "Chaines",
+              "prix": 8000,
+              "description": "Bracelet en argent avec une chaîne fine, discret et élégant.",
+              "images": "images/bracelets-chaine1.jpg"
+            },
+            {
+              "id": 86,
+              "nom": "Bracelet en perles naturelles",
+              "menu": "Bijoux",
+              "categorie": "Bracelets",
+              "sous-categorie": "Perles",
+              "prix": 9500,
+              "description": "Bracelet élégant en perles naturelles, parfait pour une allure élégante.",
+              "images": "images/bracelets-perles1.jpg"
+            },
+            {
+              "id": 87,
+              "nom": "Boucles d'oreilles pendantes en argent",
+              "menu": "Bijoux",
+              "categorie": "Boucles",
+              "sous-categorie": "Pendantes",
+              "prix": 14000,
+              "description": "Boucles pendantes en argent, idéales pour une touche d'élégance.",
+              "images": "images/boucles-pendantes1.jpg"
+            },
+            {
+              "id": 88,
+              "nom": "Créoles en or",
+              "menu": "Bijoux",
+              "categorie": "Boucles",
+              "sous-categorie": "Créoles",
+              "prix": 18000,
+              "description": "Créoles en or, classiques et intemporelles pour un look raffiné.",
+              "images": "images/boucles-creoles1.jpg"
+            },
+            {
+              "id": 89,
+              "nom": "Boucles d'oreilles pointues",
+              "menu": "Bijoux",
+              "categorie": "Boucles",
+              "sous-categorie": "Pointes",
+              "prix": 1200,
+              "description": "Boucles d'oreilles pointues en métal argenté, parfaites pour un look audacieux.",
+              "images": "images/boucles-pointes1.jpg"
+            },
+            {
+              "id": 90,
+              "nom": "Ras de cou en cuir",
+              "menu": "Bijoux",
+              "categorie": "Colliers",
+              "sous-categorie": "Ras de cou",
+              "prix": 7000,
+              "description": "Ras de cou en cuir noir, moderne et épuré.",
+              "images": "images/colliers-rasdecou2.jpg"
+            },
+            {
+              "id": 91,
+              "nom": "Sautoir en acier inoxydable",
+              "menu": "Bijoux",
+              "categorie": "Colliers",
+              "sous-categorie": "Sautoirs",
+              "prix": 1300,
+              "description": "Sautoir en acier inoxydable, résistant et élégant pour un style affirmé.",
+              "images": "images/colliers-sautoir2.jpg"
+            },
+            {
+              "id": 92,
+              "nom": "Pendentif en argent avec pierre précieuse",
+              "menu": "Bijoux",
+              "categorie": "Colliers",
+              "sous-categorie": "Pendentifs",
+              "prix": 25000,
+              "description": "Pendentif en argent avec une pierre précieuse, pour un look élégant et raffiné.",
+              "images": "images/colliers-pendentif2.jpg"
+            },
+            {
+              "id": 93,
+              "nom": "Jonc en argent massif",
+              "menu": "Bijoux",
+              "categorie": "Bracelets",
+              "sous-categorie": "Joncs",
+              "prix": 15000,
+              "description": "Jonc en argent massif, classique et moderne à la fois.",
+              "images": "images/bracelets-jonc2.jpg"
+            },
+            {
+              "id": 94,
+              "nom": "Bracelet en or rose",
+              "menu": "Bijoux",
+              "categorie": "Bracelets",
+              "sous-categorie": "Chaines",
+              "prix": 20000,
+              "description": "Bracelet délicat en or rose, pour un look doux et élégant.",
+              "images": "images/bracelets-chaine2.jpg"
+            },
+            {
+              "id": 95,
+              "nom": "Bracelet en perles de culture",
+              "menu": "Bijoux",
+              "categorie": "Bracelets",
+              "sous-categorie": "Perles",
+              "prix": 16000,
+              "description": "Bracelet en perles de culture, un choix parfait pour une allure raffinée.",
+              "images": "images/bracelets-perles2.jpg"
+            },
+            {
+              "id": 96,
+              "nom": "Boucles d'oreilles pendantes en cristal",
+              "menu": "Bijoux",
+              "categorie": "Boucles",
+              "sous-categorie": "Pendantes",
+              "prix": 18000,
+              "description": "Boucles pendantes en cristal, pour une touche de glamour et de brillance.",
+              "images": "images/boucles-pendantes2.jpg"
+            },
+            {
+              "id": 97,
+              "nom": "Créoles en argent massif",
+              "menu": "Bijoux",
+              "categorie": "Boucles",
+              "sous-categorie": "Créoles",
+              "prix": 21000,
+              "description": "Créoles en argent massif, sophistiquées et intemporelles.",
+              "images": "images/boucles-creoles2.jpg"
+            },
+            {
+              "id": 98,
+              "nom": "Boucles d'oreilles pointues en acier",
+              "menu": "Bijoux",
+              "categorie": "Boucles",
+              "sous-categorie": "Pointes",
+              "prix": 14000,
+              "description": "Boucles d'oreilles pointues en acier, un design moderne et audacieux.",
+              "images": "images/boucles-pointes2.jpg"
+            },
+            {
+              "id": 99,
+              "nom": "Ras de cou en perles et argent",
+              "menu": "Bijoux",
+              "categorie": "Colliers",
+              "sous-categorie": "Ras de cou",
+              "prix": 17000,
+              "description": "Ras de cou combinant perles et argent, pour une touche de raffinement.",
+              "images": "images/colliers-rasdecou3.jpg"
+            },
+            {
+              "id": 100,
+              "nom": "Sautoir en bois sculpté",
+              "menu": "Bijoux",
+              "categorie": "Colliers",
+              "sous-categorie": "Sautoirs",
+              "prix": 8500,
+              "description": "Sautoir en bois sculpté, naturel et élégant, parfait pour un look boho.",
+              "images": "images/colliers-sautoir3.jpg"
+            }
+      
+  ]
+  

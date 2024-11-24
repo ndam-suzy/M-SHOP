@@ -1,0 +1,568 @@
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Panier</title>
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.min.css">
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Hidden state for empty cart */
+    .hidden {
+      display: none;
+    }
+
+    /* Empty cart container */
+    .empty-cart {
+      text-align: center;
+      padding: 50px;
+    }
+
+    .empty-cart img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    .empty-cart h2 {
+      font-size: 1.5rem;
+      color: #ff6fcf;
+    }
+
+    /* Left section (Panier) */
+    .cart {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart h1 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #ff6fcf;
+    }
+
+    .product-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .product-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .product-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      margin-right: 15px;
+      border-radius: 8px;
+    }
+
+    .product-details {
+      flex: 1;
+    }
+
+    .product-details h3 {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .product-price {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .quantity-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .quantity-controls button {
+      background-color: #ff6ff8;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .quantity-controls input {
+      width: 40px;
+      text-align: center;
+    }
+
+    .cancel-button {
+      background-color: #ff6fff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    /* Right section (Summary) */
+    .summary {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .summary h2 {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+      color: #ff6fe0;
+    }
+
+    .summary div {
+      margin-bottom: 10px;
+    }
+
+    .summary .total-price,
+    .summary .delivery-fee {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .payment-methods img {
+      width: 30px;
+      height: auto;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .payment-methods label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .payment-methods input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .checkout-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #ff6fe7;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<header>
+  <div class="top-nav">
+
+    <div class="container1">
+
+        <p>Livraison gratuite à partir de 50000 FCFA d'achats</p>
+
+    </div>
+
+</div>
+
+  <div class="topnav">
+    <img class= "logo" src="images/alphabet (1).png" alt="">
+    
+    <!-- Menu Accessoires avec Méga-Menu -->
+    <div class="menu-item">
+      <a href="produits1.html"><img class="men" src="images/noeud-papillon.png" alt="">Accessoires</a>
+      <div class="mega-menu">
+        <div class="mega-menu-category">
+          <a href="produits1.html?categorie=Sac">
+            <img src="images/sac (2).jpg" alt="Sacs" class="menu-image">
+            <h3>Sacs</h3>
+          </a>
+          <a href="produits1.html?categorie=Sac&sous_categorie=Sac%20à%20mains">Sacs à main</a>
+          <a href="produits1.html?categorie=Sac&sous_categorie=Sacs%20à%20dos">Sacs à dos</a>
+          <a href="affichage.html?categorie=Sac&sous_categorie=Bandoulières">Bandoulières</a>
+        </div>
+        <div class="mega-menu-category">
+          <a href="produits1.html?categorie=Chapeau">
+            <img src="images/chap.jpg" alt="Chapeaux" class="menu-image">
+            <h3>Chapeaux </h3>
+          </a>
+          <a href="produits1.html?categorie=Chapeau&sous_categorie=Béret">Bérets</a>
+          <a href="produits1.html?categorie=Chapeau&sous_categorie=Casquettes">Casquettes</a>
+          <a href="produits1.html?categorie=Chapeau&sous_categorie=Bonnets">Bonnets</a>
+        </div>
+        <div class="mega-menu-category">
+          <a href="produits1.html?categorie=Lunettes">
+            <img src="images/lun.jpg" alt="Lunettes de soleil" class="menu-image">
+            <h3>Lunettes de Soleil</h3>
+          </a>
+          <a href="produits1.html?categorie=Lunettes&sous_categorie=Aviateur">Aviateur</a>
+          <a href="produits1.html?categorie=Lunettes&sous_categorie=Wayfarer">Wayfarer</a>
+          <a href="produits1.html?categorie=Lunettes&sous_categorie=Cat-eye">Cat-eye</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Vêtements -->
+    <div class="menu-item">
+      <a href="produits2.html"><img class="men" src="images/hanger_icon_138504.png" alt="">Vêtements</a>
+      <div class="mega-menu">
+        <div class="mega-menu-category">
+          <a href="produits2.html?categorie=Femmes">
+            <img src="images/fem.jpg" alt="Femmes" class="menu-image">
+            <h3>Femmes</h3>
+          </a>
+          <a href="produits2.html?categorie=Femmes&sous_categorie=Hauts">Hauts</a>
+          <a href="produits2.html?categorie=Femmes&sous_categorie=Bas">Bas</a>
+          <a href="produits2.html?categorie=Femmes&sous_categorie=Robes">Robes</a>
+        </div>
+        <div class="mega-menu-category">
+          <a href="produits2.html?categorie=Hommes">
+            <img src="images/hom.jpg" alt="Hommes" class="menu-image">
+            <h3>Hommes</h3>
+          </a>
+          <a href="produits2.html?categorie=Hommes&sous_categorie=Hauts">Hauts</a>
+          <a href="produits2.html?categorie=Hommes&sous_categorie=Bas">Bas</a>
+          <a href="produits2.html?categorie=Hommes&sous_categorie=Vestes">Vestes</a>
+        </div>
+        <div class="mega-menu-category">
+          <a href="produits2.html?categorie=Enfants">
+            <img src="images/enf.jpg" alt="Hommes" class="menu-image">
+            <h3>Enfants</h3>
+          </a>
+          <a href="produits2.html?categorie=Enfants&sous_categorie=Hauts">Hauts</a>
+          <a href="produits2.html?categorie=Enfants&sous_categorie=Bas">Bas</a>
+          <a href="produits2.html?categorie=Enfants&sous_categorie=Ensembles">Ensembles</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Bijoux -->
+    <div class="menu-item">
+      <a href="produits3.html"><img class="men" src="images/gem_gemstone_diamond_jewelry_stone_icon_192215.png" alt="">Bijoux</a>
+      <div class="mega-menu">
+        <div class="mega-menu-category">
+          <a href="produits3.html?categorie=Colliers">
+            <img src="images/col (1).jpg" alt="Colliers" class="menu-image">
+            <h3>Colliers</h3>
+          </a>
+          <a href="produits3.html?categorie=Colliers&sous_categorie=Ras de cou">Ras de cou</a>
+          <a href="produits3.html?categorie=Colliers&sous_categorie=Sautoirs">Sautoirs</a>
+          <a href="produits3.html?categorie=Colliers&sous_categorie=Pendentifs">Pendentifs</a>
+        </div>
+        <div class="mega-menu-category">
+          <a href="produits3.html?categorie=Bracelets">
+            <img src="images/bra.jpg" alt="Bracelets" class="menu-image">
+            <h3>Bracelets</h3>
+          </a>
+          <a href="produits3.html?categorie=Bracelets&sous_categorie=Joncs">Joncs</a>
+          <a href="produits3.html?categorie=Bracelets&sous_categorie=Chaines">Chaînes</a>
+          <a href="produits3.html?categorie=Bracelets&sous_categorie=Perles">Perles</a>
+        </div>
+        <div class="mega-menu-category">
+          <a href="produits3.html?categorie=Boucles">
+            <img src="images/bou (1).jpg" alt="Bracelets" class="menu-image">
+            <h3>Boucles</h3>
+          </a>
+          <a href="produits3.html?categorie=Boucles&sous_categorie=Pendantes">Pendantes</a>
+          <a href="produits3.html?categorie=Boucles&sous_categorie=Créoles">Créoles</a>
+          <a href="produits3.html?categorie=Boucles&sous_categorie=Pointes">Pointes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Chaussures -->
+    <div class="menu-item">
+      <a href="empty.html"><img class="men" src="images/shoe_86200.png" alt="">Chaussures</a>
+      <div class="mega-menu">
+        <div class="mega-menu-category">
+          <a href="empty.html">
+            <img src="images/ch4.jpg" alt="Femmes" class="menu-image">
+            <h3>Femmes</h3>
+          </a>
+          <a href="empty.html">Escarpins</a>
+          <a href="empty.html">Bottines</a>
+          <a href="empty.html">Baskets</a>
+          <a href="empty.html">Sandales</a>
+        </div>
+        <div class="mega-menu-category">
+          <a href="empty.html">
+            <img src="images/ch2.jpg" alt="Hommes" class="menu-image">
+            <h3>Hommes</h3>
+          </a>
+          <a href="empty.html">Baskets</a>
+          <a href="empty.html">Mocassins</a>
+          <a href="empty.html">Sandales</a>
+          <a href="empty.html">Bottes</a>
+
+        </div>
+        <div class="mega-menu-category">
+          <a href="empty.html">
+            <img src="images/ch3.jpg" alt="Hommes" class="menu-image">
+            <h3>Enfants</h3>
+          </a>
+          <a href="empty.html">Baskets</a>
+          <a href="empty.html">Mocassins</a>
+          <a href="empty.html">Sandales</a>
+          <a href="empty.html">Bottes</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="search-container">
+      <form id="search-form" onsubmit="return false;">
+        <input type="text" id="search-input" placeholder="Rechercher un produit..." name="search">
+        <button type="button" id="search-button">Rechercher</button>
+      </form>
+    </div>
+    <!-- Ajout du panier -->
+
+    <div class="cart-container">
+
+      <a href="login.html"><i class="bi bi-person user-icon"></i></a>
+      <a href="achat.html"><img src="images/paniers.png" alt="Panier" class="cart-icon"></a>
+
+  </div>
+  </div>
+ 
+  
+</header>
+<script>
+   // Fonctionnalité de recherche
+ document.getElementById('search-button').addEventListener('click', function() {
+      const searchTerm = document.getElementById('search-input').value.toLowerCase();
+      const products = document.querySelectorAll('.product');
+
+      // Parcourir tous les produits
+      products.forEach(product => {
+        const productName = product.querySelector('h3').textContent.toLowerCase();
+        const productAlt = product.querySelector('img').alt.toLowerCase();
+
+        // Vérifier si le produit correspond au terme de recherche
+        if (productName.includes(searchTerm) || productAlt.includes(searchTerm)) {
+          product.style.display = ''; // Affiche le produit
+        } else {
+          product.style.display = 'none'; // Masque le produit
+        }
+      });
+    });
+
+    // Gestion de la touche "Entrée" dans le champ de recherche
+    document.getElementById('search-input').addEventListener('keyup', function(event) {
+      if (event.key === 'Enter') {
+        document.getElementById('search-button').click();
+      }
+    });
+</script>
+
+  <script src="js/index.js"></script>
+
+
+<body>
+  <div id="main-container">
+    <div class="container">
+      <!-- Left section: Cart -->
+      <div class="cart" id="cart-section">
+        <h1>Mon Panier (<span id="cart-count">0</span> articles)</h1>
+        <ul class="product-list" id="product-list"></ul>
+      </div>
+
+      <!-- Right section: Summary -->
+      <div class="summary" id="summary-section">
+        <h2>Résumé</h2>
+        <div class="total-price">Total: <span id="total-price">0</span> FCFA</div>
+        <div class="delivery-fee">Livraison: <span>1000</span> FCFA</div>
+
+        <h3>Méthodes de paiement</h3>
+        <div class="payment-methods">
+          <label>
+            <input type="radio" name="payment-method" value="credit-card" />
+            <img src="images/carte-bancaire.png" alt="Carte de Crédit" />
+            Carte de Crédit
+          </label>
+
+          
+
+          <label>
+            <input type="radio" name="payment-method" value="paypal" />
+            <img src="images/pay-pal.png" alt="PayPal" />
+            PayPal
+          </label>
+
+          <label>
+            <input type="radio" name="payment-method" value="mobile-money" />
+            <img src="images/paiement-a-la-livraison.png" alt="Mobile Money" />
+            Paiement à la livraison
+          </label>
+        </div>
+
+        <button class="checkout-button" onclick="redirectToLogin()">Commander</button>
+      </div>
+    </div>
+
+    <!-- Empty cart message -->
+    <div class="empty-cart hidden" id="empty-cart">
+      <img src="images/vide.png" alt="Panier vide" />
+      <h2>Votre panier est vide</h2>
+    </div>
+  </div>
+
+  <script>
+    // Example data
+    const products = [
+      { id: 1, name: "Robe de mariage Anna Cmpbell", price: 600000, quantity: 1, image: "images/Anna-Campbell1.jpg" },
+      { id: 2, name: "Top en soie", price: 9000, quantity: 1, image: "images/femmes-hauts1.jpg" },
+      { id: 3, name: "Béret en laine", price: 3000, quantity: 1, image: "images/beret1.jpg" },
+    ];
+
+    const productList = document.getElementById("product-list");
+    const cartCount = document.getElementById("cart-count");
+    const totalPrice = document.getElementById("total-price");
+    const cartSection = document.getElementById("cart-section");
+    const summarySection = document.getElementById("summary-section");
+    const emptyCart = document.getElementById("empty-cart");
+
+    // Render products
+    function renderProducts() {
+      productList.innerHTML = "";
+      let total = 0;
+      products.forEach((product) => {
+        total += product.price * product.quantity;
+
+        const li = document.createElement("li");
+        li.classList.add("product-item");
+
+        li.innerHTML = `
+          <img src="${product.image}" alt="${product.name}" />
+          <div class="product-details">
+            <h3>${product.name}</h3>
+            <p class="product-price">${product.price} FCFA</p>
+            <div class="quantity-controls">
+              <button onclick="updateQuantity(${product.id}, -1)">-</button>
+              <input type="text" value="${product.quantity}" disabled />
+              <button onclick="updateQuantity(${product.id}, 1)">+</button>
+            </div>
+          </div>
+          <button class="cancel-button" onclick="removeProduct(${product.id})">Annuler</button>
+        `;
+
+        productList.appendChild(li);
+      });
+
+      cartCount.textContent = products.length;
+      totalPrice.textContent = total;
+
+      if (products.length === 0) {
+        cartSection.classList.add("hidden");
+        summarySection.classList.add("hidden");
+        emptyCart.classList.remove("hidden");
+      } else {
+        cartSection.classList.remove("hidden");
+        summarySection.classList.remove("hidden");
+        emptyCart.classList.add("hidden");
+      }
+    }
+
+    // Update quantity
+    function updateQuantity(id, change) {
+      const product = products.find((p) => p.id === id);
+      if (product) {
+        product.quantity = Math.max(1, product.quantity + change);
+        renderProducts();
+      }
+    }
+
+    // Remove product
+    function removeProduct(id) {
+      const index = products.findIndex((p) => p.id === id);
+      if (index !== -1) {
+        products.splice(index, 1);
+        renderProducts();
+      }
+    }
+    
+    // Redirect to login page
+    function redirectToLogin() {
+      window.location.href = "login.html"; // Replace with the actual path to your login page
+    }
+
+    // Initial render
+    renderProducts();
+  </script>
+</body>
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+        <h4>À propos</h4>
+        <a href="index.html">Accueil</a>
+        <a href="#">Notre histoire</a>
+        <a href="#">Équipe</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="footer-section">
+        <h4>Produits</h4>
+        <a href="produits2.html">Vêtements</a>
+        <a href="produits3.html">Bijoux</a>
+        <a href="produits1.html">Accessoires</a>
+        <a href="empty.html">Chaussures</a>
+    </div>
+    <div class="footer-section">
+        <h4>Services</h4>
+        <a href="#">Livraison</a>
+        <a href="#">Retours</a>
+        <a href="#">FAQ</a>
+        <a href="#">Assistance</a>
+    </div>
+    <div class="footer-section">
+        <h4>Réseaux sociaux</h4>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter (1).png" alt="Twitter"></a>
+            <a href="#"><img src="images/pinterest.png" alt="Pinterest"></a>
+        </div>
+    </div>
+  </div>
+  <p style="text-align: center; margin-top: 20px;">© 2024 M SHOP. Tous droits réservés.</p>
+  </footer>
+
+</html>

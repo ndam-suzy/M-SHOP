@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .login-container h1 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #ff6f91;
+    }
+
+    .login-container form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-container label {
+      text-align: left;
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .login-container input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    .login-container input:focus {
+      border-color: #ff6f91;
+    }
+
+    .login-container button {
+      background-color: #ff6f91;
+      color: #fff;
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .login-container button:hover {
+      background-color: #ff4b73;
+    }
+
+    .login-container .register-link {
+      margin-top: 15px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .login-container .register-link a {
+      color: #ff6f91;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-container .register-link a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive design */
+    @media (max-width: 400px) {
+      .login-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <h1>Connexion</h1>
+    <form action="#" method="POST" id="login-form">
+      <label for="email">Adresse Email</label>
+      <input type="email" id="email" name="email" placeholder="Entrez votre email" required />
+
+      <label for="password">Mot de Passe</label>
+      <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required />
+
+      <button type="submit">Se connecter</button>
+    </form>
+
+    <div class="register-link">
+      Pas encore de compte ? <a href="register.html">Inscrivez-vous</a>
+    </div>
+  </div>
+</body>
+
+</html>
