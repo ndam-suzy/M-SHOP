@@ -1,0 +1,266 @@
+/* Général */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #fdfdfd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ff47b8;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.filter-title {
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: color 0.3s;
+}
+
+.filter-title:hover {
+  color: #ff6347;
+}
+
+/* Liste des produits */
+.product-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header des filtres */
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Sous-catégories */
+.subcategories {
+  display: flex;
+  gap: 15px;
+}
+
+.subcategory {
+  background-color: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.subcategory:hover {
+  background-color: #ff47ff;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Liste déroulante de tri */
+.sort-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sort-dropdown {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.apply-sort-button {
+  background-color: #ff00ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.apply-sort-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Grille des produits */
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Carte produit */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.product-card p {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination button {
+  background-color: #ee58fce7;
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pagination button:hover {
+  background-color: #fa40db;
+}
+
+.pagination button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
+.product-card img {
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.filter-title:focus,
+.subcategory:focus,
+.apply-sort-button:focus {
+  outline: 2px solid #ff00eaa2;
+  outline-offset: 2px;
+}
+.product-card {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.pagination button.active {
+  background-color: #f393e6;
+  color: white;
+  pointer-events: none;
+}
+.product-card p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.products-wrapper {
+  background-color: #ffffff93; /* Fond rosé */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card button {
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product-card button:first-of-type {
+  background-color: #ff009db6;
+  color: white;
+}
+
+.product-card button:first-of-type:hover {
+  background-color: #b3006e;
+  transform: scale(1.05);
+}
+
+.selected {
+  font-weight: bold;
+  color: #ff00d4;
+}

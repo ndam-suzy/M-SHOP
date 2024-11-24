@@ -1,0 +1,50 @@
+/* Style par défaut pour les écrans larges */
+.centered-icon {
+    font-size: 25rem; /* Taille de l'icône */
+    color: #6c757d;
+    margin-left: 500px;
+    margin-bottom: 150px;
+    margin-top: 1000px;
+}
+
+.empty2 {
+    font-size: 20px;
+    margin-left: 550px;
+    margin-bottom: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Media queries pour les tablettes (largeur maximale : 768px) */
+@media screen and (max-width: 768px) {
+    .centered-icon {
+        font-size: 15rem; /* Réduction de la taille de l'icône */
+        margin-left: auto;
+        margin-right: auto; /* Centrage horizontal */
+        margin-top: 200px; /* Ajustement de la marge supérieure */
+    }
+
+    .empty2 {
+        font-size: 18px; /* Réduction de la taille du texte */
+        text-align: center; /* Centrer le texte */
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Media queries pour les mobiles (largeur maximale : 480px) */
+@media screen and (max-width: 480px) {
+    .centered-icon {
+        font-size: 10rem; /* Réduction supplémentaire pour les petits écrans */
+        margin-left: auto;
+        margin-right: auto; /* Centrage horizontal */
+        margin-top: 100px;
+    }
+
+    .empty2 {
+        font-size: 16px; /* Ajustement de la taille du texte */
+        text-align: center; /* Centrer le texte */
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px; /* Ajustement de la marge supérieure */
+    }
+}

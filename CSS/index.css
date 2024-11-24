@@ -1,0 +1,540 @@
+/* Style de base pour les liens du menu */
+
+.topnav a {
+
+  color: #000000; /* Couleur par défaut */
+
+  text-decoration: none; /* Pas de soulignement par défaut */
+
+  padding: 10px 15px; /* Espacement autour du texte */
+
+  position: relative; /* Nécessaire pour les effets de position */
+
+  transition: color 0.3s ease, background-color 0.3s ease; /* Transition douce */
+
+}
+
+
+/* Effet de survol */
+
+.topnav a:hover {
+
+  color: #fff; /* Couleur du texte au survol */
+
+  background-color: #bf154eaf; /* Couleur de fond au survol */
+
+  border-radius: 5px; /* Bords arrondis */
+
+}
+
+
+/* Effet de soulignement */
+
+.topnav a::after {
+
+  content: ''; /* Nécessaire pour créer un pseudo-élément */
+
+  position: absolute; /* Positionnement absolu */
+
+  left: 0; /* Aligné à gauche */
+
+  bottom: 0; /* Aligné en bas */
+
+  height: 2px; /* Épaisseur de la ligne */
+
+  width: 100%; /* Largeur complète */
+
+  background-color: #eb93b0; /* Couleur de la ligne */
+
+  transform: scaleX(0); /* Initialement caché */
+
+  transition: transform 0.3s ease; /* Transition douce */
+
+}
+
+
+/* Afficher la ligne au survol */
+
+.topnav a:hover::after {
+
+  transform: scaleX(1); /* Afficher la ligne */
+
+}
+
+
+    /* Styles pour la barre de navigation secondaire (topnav) */
+    .topnav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f1c0c0d7;
+      padding: 20px;
+      height: auto;
+    }
+
+    .topnav .search-container {
+      display: flex;
+      align-items: center;
+      margin-left: 40px;
+    }
+    .search-container img{
+      height: 30px;
+      width: 30px;
+    }
+
+    .topnav input[type="text"] {
+      padding: 10px;
+      font-size: 17px;
+      margin-top: 8px;
+      width: 400px;
+      border-style: double;
+      border-radius: 20px;
+      border-color: #8B0000;
+    }
+
+    .topnav .search-container button {
+      margin-top: -5px;
+      margin-left: 0px;
+      cursor: pointer;
+      background-color: #e98d8d;
+    }
+
+    .topnav .search-container button:hover {
+      background: #ccc;
+    }
+
+    .topnav .img {
+      height: 100px;
+      width: 100px;
+    }
+
+    /* Responsive pour petits écrans */
+    @media screen and (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar-left, .navbar-right {
+        flex-direction: column;
+      }
+
+      .topnav {
+        flex-direction: column;
+      }
+
+      .topnav a, .topnav input[type="text"], .topnav .search-container button {
+        width: 100%;
+        text-align: left;
+        padding: 14px;
+        margin-bottom: 10px;
+      }
+
+      .topnav input[type="text"] {
+        margin-top: 0;
+        border: 1px solid #ccc;
+      }
+    }
+    .topnav .men {
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+      margin-bottom: -5px;
+    }
+
+    .carrousel-container {
+      margin-top: 10px;
+    }
+    .btn1 {
+      
+      text-transform: none;
+      text-decoration: solid;
+      color: #ccc;
+      margin-top: 20px;
+    }
+    .btn{
+      width: 50px;
+      height: 25px;
+      background-color: #ad4545;
+      margin-left: 650px;
+      border-radius: 5px;
+      text-align: center;
+
+    }
+   
+ /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Carrousel Container */
+  .carrousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+  }
+  
+  .carrousel {
+    display: flex;
+    transition: transform 1s ease;
+  
+  }
+  
+  .carrousel-item {
+    min-width: 100%;
+    position: relative;
+    
+  }
+  
+  .carrousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .carrousel-text {
+      left: 5%;
+    }
+  }
+  /* Reset des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+.topnav .logo{
+width: 70px;
+height: 60px;
+}
+.topnav .search{
+  margin-bottom: 50px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section de la catégorie */
+.category {
+  margin-bottom: 40px;
+}
+
+.category h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+/* Grille de produits */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Produit individuel */
+.product {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+}
+
+.product img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.price {
+  font-size: 16px;
+  color: #e74c3c;
+  margin: 10px 0;
+}
+
+
+
+.btn-buy {
+  background-color: #FF66B2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-buy:hover {
+  background-color: #b3006e;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* S'assurer que la structure parent prend toute la largeur de la page */
+.menu-item {
+  position: relative; /* Nécessaire pour positionner correctement le méga-menu */
+}
+
+
+/* Modifications pour le méga-menu */
+
+.mega-menu {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  gap: 5px;
+
+  padding: 20px;
+
+  background-color:rgba(255, 255, 255, 0.616);
+
+  position: absolute;
+
+  top: 100%;
+  border-radius: 20px;
+  left: 0;
+
+  right: 0; /* Changez ici pour prendre toute la largeur */
+
+  width: 800px;
+  height: auto;
+
+  z-index: 9999;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+}
+
+/* Lorsque le menu est activé (au survol) */
+.menu-item:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Style pour chaque catégorie dans le mega-menu */
+.mega-menu-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les éléments à l'intérieur de la catégorie */
+  justify-content: center;
+  padding: 10px;
+  background-color: #f7f7f7; /* Fond de chaque catégorie */
+  border-radius: 8px; /* Bords arrondis pour chaque catégorie */
+  transition: transform 0.3s ease-in-out; /* Effet d'agrandissement lors du survol */
+  text-align: center; /* Centre le texte */
+  height: auto;
+  
+}
+
+.mega-menu-category:hover {
+  transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+/* Image dans chaque catégorie */
+.menu-image {
+  width: 100%; /* L'image prend toute la largeur de la catégorie */
+  height: 200px; /* Hauteur fixe des images */
+  object-fit: cover; /* Pour que l'image soit bien redimensionnée sans déformation */
+  border-radius: 8px; /* Bord arrondi pour les images */
+  margin-bottom: 10px; /* Espacement sous l'image */
+  
+}
+
+/* Titre des catégories */
+.mega-menu-category h3 {
+  font-size: 18px;
+  color: #333; /* Couleur du texte */
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Liens dans les catégories */
+.mega-menu-category a {
+  display: block;
+  font-size: 10px;
+  margin: 5px 0;
+  color: #555;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Changement de couleur au survol des liens */
+.mega-menu-category a:hover {
+  color: #037AEF; /* Couleur au survol */
+}
+
+footer {
+  background-color: #800000; /* Bordeaux */
+  color: #fff;
+  padding: 20px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px; /* Limite la largeur */
+  margin: 0 auto; /* Centrer le footer */
+}
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+.footer-section h4 {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 600px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  .footer-section {
+      text-align: center; /* Centre le texte sur mobile */
+  }
+}
+/* Styles pour le panier */
+
+.cart-container {
+
+  margin-left: auto; /* Pousse le panier à droite */
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+.cart-container {
+
+  font-family: Tahoma, sans-serif;
+  font-style: italic;
+
+
+}
+
+
+
+.cart-icon {
+
+  width: 30px; /* Ajustez la taille selon vos besoins */
+
+  height: 30px;
+
+}
+
+/* Responsive pour le panier */
+
+@media (max-width: 768px) {
+
+  .cart-container {
+
+      margin-left: 10px; /* Ajustez l'espacement sur mobile */
+
+  }
+
+}
+
+
+.top-nav {
+
+  background-color: #8b0000f3; /* Bordeaux */
+
+  color: white;
+
+  padding: 10px 0;
+
+}
+.top-nav p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .container1 {
+
+      flex-direction: column;
+
+      align-items: flex-start;
+
+  }
+
+
+}
+.user-icon {
+  font-size: 40px;
+  color: #000000;
+}
+
+
